@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Machine_Learning_Studio.MainPage">
+
+    <Grid ColumnDefinitions="150, 2, *" RowDefinitions="0.95*,auto">
+        <VerticalStackLayout BackgroundColor="#E3F2FD">
+            <Border Stroke="#0D47A1"
+                StrokeThickness="4" 
+                StrokeShape="RoundRectangle 5"
+                BackgroundColor="#1565C0"
+                Padding="2"
+                Grid.RowSpan="1"
+                HorizontalOptions="Fill">
+                <Button BackgroundColor="#1565C0"
+                    Text="Algorithms"
+                    WidthRequest="111"
+                    CornerRadius="0" 
+                    HorizontalOptions="Fill">
+                </Button>
+            </Border>
+
+            <Border Stroke="#0D47A1"
+                StrokeThickness="4" 
+                StrokeShape="RoundRectangle 5"
+                Padding="2"
+                BackgroundColor="#1565C0"
+                HorizontalOptions="Fill">
+                <Button BackgroundColor="#1565C0"
+                    Text="Data Sets"
+                    WidthRequest="126"
+                    CornerRadius="0" 
+                    HorizontalOptions="Fill" />
+            </Border>
+
+
+            <Border Stroke="#0D47A1"
+                StrokeThickness="4" 
+                StrokeShape="RoundRectangle 5"
+                    BackgroundColor="#1565C0"
+                Padding="2"
+                HorizontalOptions="Fill">
+                <Button BackgroundColor="#1565C0"
+                    Text="Wiki"
+                    WidthRequest="126"
+                    CornerRadius="0" 
+                    HorizontalOptions="Fill" />
+            </Border>
+
+            <Border Stroke="#0D47A1"
+                StrokeThickness="4" 
+                StrokeShape="RoundRectangle 5"
+                BackgroundColor="#1565C0"
+                Padding="2"
+                HorizontalOptions="Fill">
+                <Button BackgroundColor="#1565C0"
+                    Text="Stats"
+                    WidthRequest="126"
+                    CornerRadius="0" 
+                    HorizontalOptions="Fill" />
+            </Border>
+        </VerticalStackLayout>
+
+        <Label 
+            BackgroundColor="#E3F2FD"
+            Padding="2"
+            Grid.Column="0"
+            Grid.Row="1"
+            VerticalOptions="EndAndExpand"
+            FontSize="Medium" 
+            FontAttributes="Italic" 
+            Text="V 1.0.0" />
+
+        <VerticalStackLayout 
+            BackgroundColor="#E3F2FD"
+            Grid.Column="1" 
+            WidthRequest="2"
+            Grid.RowSpan="2"
+            />
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="white"
+            Grid.Column="2">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                WidthRequest="180"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
