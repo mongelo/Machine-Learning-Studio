@@ -3,82 +3,152 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Machine_Learning_Studio.MainPage">
 
-    <Grid ColumnDefinitions="150, 2, *" RowDefinitions="0.95*,auto">
-        <VerticalStackLayout BackgroundColor="#E3F2FD">
+    <Grid ColumnDefinitions="150, 2, *" RowDefinitions="*">
+        <VerticalStackLayout BackgroundColor="#E3F2FD" >
+            <Border VerticalOptions="FillAndExpand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#E3F2FD" Offset="0.0"/>
+                        <GradientStop Color="#E3F2FD" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Grid Margin="10">
+                   
+
+                </Grid>
+
+            </Border>
             <Border Stroke="#0D47A1"
-                StrokeThickness="4" 
-                StrokeShape="RoundRectangle 5"
-                BackgroundColor="#1565C0"
-                Padding="2"
-                Grid.RowSpan="1"
-                HorizontalOptions="Fill">
-                <Button BackgroundColor="#1565C0"
-                    Text="Algorithms"
-                    WidthRequest="111"
-                    CornerRadius="0" 
+                    StrokeThickness="4" 
+                    StrokeShape="RoundRectangle 5"
+                    BackgroundColor="#1565C0"
+                    Padding="0,0,-30,0"
+                    Grid.RowSpan="1"
                     HorizontalOptions="Fill">
+                <Button WidthRequest="111"
+                        CornerRadius="0" 
+                        HorizontalOptions="Fill"
+                        Text="Algorithms"
+                        FontAttributes="Bold"
+                        >
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#1565C0" Offset="0.0"/>
+                            <GradientStop Color="#0D47A1" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                </Border>
+            
+            <Border Stroke="#0D47A1"
+                    StrokeThickness="4" 
+                    StrokeShape="RoundRectangle 5"
+                    BackgroundColor="#1565C0"
+                    Padding="0,0,-30,0"
+                    Grid.RowSpan="1"
+                    HorizontalOptions="Fill">
+                <Button WidthRequest="111"
+                        CornerRadius="0" 
+                        HorizontalOptions="Fill"
+                        Text="Data Sets"
+                        FontAttributes="Bold"
+                        >
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#1565C0" Offset="0.0"/>
+                            <GradientStop Color="#0D47A1" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Border>
+
+
+            <Border Stroke="#0D47A1"
+                    StrokeThickness="4" 
+                    StrokeShape="RoundRectangle 5"
+                    BackgroundColor="#1565C0"
+                    Padding="0,0,-30,0"
+                    Grid.RowSpan="1"
+                    HorizontalOptions="Fill">
+                <Button WidthRequest="111"
+                        CornerRadius="0" 
+                        HorizontalOptions="Fill"
+                        Text="Wiki"
+                        FontAttributes="Bold"
+                        >
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#1565C0" Offset="0.0"/>
+                            <GradientStop Color="#0D47A1" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
                 </Button>
             </Border>
 
             <Border Stroke="#0D47A1"
-                StrokeThickness="4" 
-                StrokeShape="RoundRectangle 5"
-                Padding="2"
-                BackgroundColor="#1565C0"
-                HorizontalOptions="Fill">
-                <Button BackgroundColor="#1565C0"
-                    Text="Data Sets"
-                    WidthRequest="126"
-                    CornerRadius="0" 
-                    HorizontalOptions="Fill" />
-            </Border>
-
-
-            <Border Stroke="#0D47A1"
-                StrokeThickness="4" 
-                StrokeShape="RoundRectangle 5"
+                    StrokeThickness="4" 
+                    StrokeShape="RoundRectangle 5"
                     BackgroundColor="#1565C0"
-                Padding="2"
-                HorizontalOptions="Fill">
-                <Button BackgroundColor="#1565C0"
-                    Text="Wiki"
-                    WidthRequest="126"
-                    CornerRadius="0" 
-                    HorizontalOptions="Fill" />
+                    Padding="0,0,-30,0"
+                    Grid.RowSpan="1"
+                    HorizontalOptions="Fill">
+                <Button WidthRequest="111"
+                        CornerRadius="0" 
+                        HorizontalOptions="Fill"
+                        Text="Stats"
+                        FontAttributes="Bold"
+                        >
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#1565C0" Offset="0.0"/>
+                            <GradientStop Color="#0D47A1" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
             </Border>
 
-            <Border Stroke="#0D47A1"
-                StrokeThickness="4" 
-                StrokeShape="RoundRectangle 5"
-                BackgroundColor="#1565C0"
-                Padding="2"
-                HorizontalOptions="Fill">
-                <Button BackgroundColor="#1565C0"
-                    Text="Stats"
-                    WidthRequest="126"
-                    CornerRadius="0" 
-                    HorizontalOptions="Fill" />
+
+            <Border VerticalOptions="FillAndExpand" HeightRequest="900">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.85">
+                        <GradientStop Color="#BBDEFB" Offset="0.0"/>
+                        <GradientStop Color="#E3F2FD" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Grid Margin="10">
+
+
+                </Grid>
+
             </Border>
         </VerticalStackLayout>
 
-        <Label 
-            BackgroundColor="#E3F2FD"
-            Padding="2"
-            Grid.Column="0"
-            Grid.Row="1"
-            VerticalOptions="EndAndExpand"
-            FontSize="Medium" 
-            FontAttributes="Italic" 
-            Text="V 1.0.0" />
+
+
+        <Border VerticalOptions="FillAndExpand">
+            <Grid Margin="0">
+                <Label 
+                    BackgroundColor="#E3F2FD"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    VerticalOptions="EndAndExpand"
+                    FontSize="Medium" 
+                    FontAttributes="Italic" 
+                    Text="V 1.0.0" />
+
+            </Grid>
+        </Border>
 
         <VerticalStackLayout 
-            BackgroundColor="#E3F2FD"
+            BackgroundColor="#E1F5FE"
             Grid.Column="1" 
             WidthRequest="2"
             Grid.RowSpan="2"
             />
 
-        <VerticalStackLayout
+            <VerticalStackLayout
             Padding="30,0"
             Spacing="25"
             BackgroundColor="white"
