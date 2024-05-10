@@ -11,7 +11,7 @@ This is an app where I implement my own machine learning algorithms and where th
 - Progress bars for long tasks.
 - Wiki pages for everything, this is to help me learn also.
 - Comparison of my algorithms with ML.NET.
-- Support different versions of the same algorithm¨.
+- Support different versions of the same algorithm.
 - Algorithm variants: K-Means and Parallel K-Means for example.
 - Data set and algorithm tags. Used to make sure only applicable data sets are selectable when running an algorithm.
 
