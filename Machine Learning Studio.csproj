@@ -57,18 +57,43 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="AlgorithmsPage\AlgorithmsPage.xaml.cs">
+	    <DependentUpon>AlgorithmsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="StatsPage\StatsPage.xaml.cs">
+	    <DependentUpon>StatsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="WikiPage\WikiPage.xaml.cs">
+	    <DependentUpon>WikiPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="DataSetsPage\DataSetsPage.xaml.cs">
+	    <DependentUpon>DataSetsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="StartPage\MenuButton.xaml.cs">
 	    <DependentUpon>MenuButton.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AlgorithmsPage\AlgorithmsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="StatsPage\StatsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WikiPage\WikiPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DataSetsPage\DataSetsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="StartPage\MenuButton.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
