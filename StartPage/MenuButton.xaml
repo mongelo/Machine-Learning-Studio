@@ -8,11 +8,13 @@
         BackgroundColor="#1565C0"
         Padding="0,0,-30,0"
         Grid.RowSpan="1"
+        InputTransparent ="False"
         HorizontalOptions="Fill">
-        <Button WidthRequest="111"
+        <Button WidthRequest="111" HeightRequest="40"
             CornerRadius="0" 
-            HorizontalOptions="Fill"
+            HorizontalOptions="Center"
             Text="{Binding ButtonText}"
+            Clicked="Button_Clicked"
             FontAttributes="Bold"
             >
             <Button.Background>

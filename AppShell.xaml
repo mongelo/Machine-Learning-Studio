@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Machine_Learning_Studio"
     Shell.FlyoutBehavior="Disabled"
-    Title="Machine Learning Studio">
+    Title="Machine Learning Studio"
+    >
 
     <ShellContent
         ContentTemplate="{DataTemplate local:MainPage}"

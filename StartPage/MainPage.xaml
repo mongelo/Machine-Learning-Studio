@@ -5,58 +5,30 @@
              xmlns:startPageResources="clr-namespace:Machine_Learning_Studio.StartPage">
 
     <Grid ColumnDefinitions="150, 2, *" RowDefinitions="*">
-        <VerticalStackLayout BackgroundColor="#E3F2FD" >
-            <Border VerticalOptions="FillAndExpand">
+
+        <ScrollView Padding="-2,0,0,-2">
+            <Border>
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="#E3F2FD" Offset="0.0"/>
-                        <GradientStop Color="#E3F2FD" Offset="1.0"/>
+                        <GradientStop Color="#0066cc" Offset="0.0"/>
+                        <GradientStop Color="#66b3ff" Offset="1.0"/>
                     </LinearGradientBrush>
                 </Border.Background>
-
-                <Grid Margin="10">
-                   
-
-                </Grid>
-
-            </Border>
-
-            <startPageResources:MenuButton ButtonText="Algorithms"/>
-            <startPageResources:MenuButton ButtonText="Data Sets"/>
-            <startPageResources:MenuButton ButtonText="Wiki"/>
-            <startPageResources:MenuButton ButtonText="Stats"/>
-
-            <Border VerticalOptions="FillAndExpand" HeightRequest="900">
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.85">
-                        <GradientStop Color="#BBDEFB" Offset="0.0"/>
-                        <GradientStop Color="#E3F2FD" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <Grid Margin="10">
-
-
-                </Grid>
+                <VerticalStackLayout>
+                    <startPageResources:MenuButton ButtonText="Algorithms"/>
+                    <startPageResources:MenuButton ButtonText="Data Sets"/>
+                    <startPageResources:MenuButton ButtonText="Wiki"/>
+                    <startPageResources:MenuButton ButtonText="Stats"/>
+                </VerticalStackLayout>
 
             </Border>
-        </VerticalStackLayout>
-
-
-
-        <Border VerticalOptions="FillAndExpand">
-            <Grid Margin="0">
-                <Label 
-                    BackgroundColor="#E3F2FD"
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    VerticalOptions="EndAndExpand"
-                    FontSize="Medium" 
-                    FontAttributes="Italic" 
-                    Text="V 1.0.0" />
-
-            </Grid>
-        </Border>
+        </ScrollView>
+        
+        <Label 
+                VerticalOptions="EndAndExpand"
+                FontSize="Medium" 
+                FontAttributes="Italic" 
+                Text="V 1.0.0" />
 
         <VerticalStackLayout 
             BackgroundColor="#E1F5FE"
@@ -94,7 +66,10 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
+
     </Grid>
+    
 
 </ContentPage>
