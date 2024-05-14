@@ -20,5 +20,15 @@
                 return path;
             }
         }
+
+        public static string ReadJsonFromFile(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("File not found", filePath);
+            }
+            return File.ReadAllText(filePath);
+        }
+
     }
 }

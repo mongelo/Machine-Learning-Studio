@@ -3,10 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Machine_Learning_Studio.DataSetsPage.DataSetsPage">
     <VerticalStackLayout>
-        <Label 
-            x:Name="Haha"
-            Text="Welcome to DataSetsPage"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ListView x:Name="dataSetsMetadataList">
+            <!-- Define a DataTemplate to customize the appearance of each item -->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontSize="Large"/>
+                            <Label Text="{Binding Size, StringFormat='N={0}'}" FontSize="Medium"/>
+                            <Label Text="{Binding Description}" FontSize="Default"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
     </VerticalStackLayout>
 </ContentView>
