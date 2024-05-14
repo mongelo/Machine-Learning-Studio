@@ -4,6 +4,7 @@
              x:Class="Machine_Learning_Studio.DataSetsPage.DataSetsPage">
     <VerticalStackLayout>
         <Label 
+            x:Name="Haha"
             Text="Welcome to DataSetsPage"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />

@@ -85,6 +85,7 @@ namespace Machine_Learning_Studio
             HeaderLabel.Text = $"DATA SETS";
             HideAllPages();
             ShowDataSetsPage = true;
+            Mediator.SendMessage("datasets_activated");
         }
 
         private void ExecuteWikiButtonCommand()
