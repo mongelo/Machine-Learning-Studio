@@ -71,6 +71,7 @@ namespace Machine_Learning_Studio
             ShowDataSetsPage = false;
             ShowWikiPage = false;
             ShowStatsPage = false;
+            
         }
 
         private void ExecuteAlgorithmsButtonCommand()
