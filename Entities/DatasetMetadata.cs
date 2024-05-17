@@ -1,6 +1,6 @@
 ﻿namespace Machine_Learning_Studio.Entities
 {
-    public class Dataset
+    public class DatasetMetadata
     {
         public string Name { get; set; }
         public string Description { get; set; }

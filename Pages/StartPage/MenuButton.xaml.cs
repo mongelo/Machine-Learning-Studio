@@ -36,7 +36,7 @@ public partial class MenuButton
         }
     }
 
-    private void UpdateButtonColors()
+	private void UpdateButtonColors()
     {
         DarkerButtonColor = _highlighted ? _blueColor : _darkBlueColor;
         LighterButtonColor = _highlighted ? _lightBlueColor : _mediumBlueColor;

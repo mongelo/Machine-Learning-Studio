@@ -27,6 +27,7 @@
                         Grid.RowSpan="1"
                         InputTransparent ="False"
                         HorizontalOptions="Fill">
+
                         <StackLayout>
                             <Label Text="{Binding Name}" FontSize="Large"/>
                             <Label Text="{Binding Size, StringFormat='N={0}'}" FontSize="Medium"/>

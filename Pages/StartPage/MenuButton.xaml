@@ -16,8 +16,8 @@
             HorizontalOptions="Center"
             Text="{Binding ButtonText}"
             Clicked="Button_Clicked"
-            FontAttributes="Bold"
-            >
+            FontAttributes="Bold">
+
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                     <GradientStop Color="{Binding LighterButtonColor}" Offset="0.0"/>

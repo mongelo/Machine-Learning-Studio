@@ -1,6 +1,5 @@
 using Machine_Learning_Studio.Entities;
 using Machine_Learning_Studio.Helpers;
-using System.Linq;
 using System.Text.Json;
 
 namespace Machine_Learning_Studio.DataSetsPage;
@@ -8,7 +7,7 @@ namespace Machine_Learning_Studio.DataSetsPage;
 public partial class DataSetsPage : ContentView
 {
     private const string _datasetFolderName = "Datasets";
-    private List<Dataset> _datasets = new List<Dataset>();
+    private List<DatasetMetadata> _datasetsMetadata = new List<DatasetMetadata>();
 
     public DataSetsPage()
     {
@@ -32,7 +31,7 @@ public partial class DataSetsPage : ContentView
 
     private void BindDatasetsToView()
     {
-        dataSetsMetadataList.ItemsSource = _datasets;
+        dataSetsMetadataList.ItemsSource = _datasetsMetadata;
     }
 
     private void LoadDatasetMetadata() 
@@ -44,8 +43,8 @@ public partial class DataSetsPage : ContentView
         foreach (var directory in datasetDirectories)
         {
             var jsonData = FileHelper.ReadJsonFromFile(directory+"\\datasetMetadata.json");
-            var dataset = JsonSerializer.Deserialize<Dataset>(jsonData);
-            if(dataset!=null) _datasets.Add(dataset);
+            var dataset = JsonSerializer.Deserialize<DatasetMetadata>(jsonData);
+            if(dataset!=null) _datasetsMetadata.Add(dataset);
         }
     }
 

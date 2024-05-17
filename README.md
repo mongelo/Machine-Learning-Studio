@@ -5,7 +5,7 @@ This is an app where I implement my own machine learning algorithms and where th
 - Start page with list of (data sets, algorithms, wiki pages etc.) divided into categories (new, last visited) and also show the last runs/tranings on this start page.
 - Large "New Run" button always available in the lower left.
 - Breadcrumbs feature in the top left.
-- When starting enw run a lot of tasks are listed, for example: 1.0 Choose algorithm, 1.1 Choose algorithm variant, 2.0 Choose data set, 2.1 Apply pre-processing? 
+- When starting new run a lot of tasks are listed, for example: 1.0 Choose algorithm, 1.1 Choose algorithm variant, 2.0 Choose data set, 2.1 Apply pre-processing? 
 - When all tasks are fulfilled a new run can begin.
 - Store various stats and all previous runs.
 - Progress bars for long tasks.
@@ -18,3 +18,8 @@ This is an app where I implement my own machine learning algorithms and where th
 ## Features Required for Others to be Able to Use this App
 - Uploading of custom data sets.
 - Creation of custom algorithms.
+
+
+## MAUI Drawbacks
+- No proper support for mouseOver events.
+- No console log.

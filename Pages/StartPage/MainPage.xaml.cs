@@ -79,7 +79,8 @@ namespace Machine_Learning_Studio
             HeaderLabel.Text = $"ALGORITHMS";
             HideAllPages();
             ShowAlgorithmsPage = true;
-        }
+			Mediator.SendMessage("algorithms_activated");
+		}
 
         private void ExecuteDataSetsButtonCommand()
         {

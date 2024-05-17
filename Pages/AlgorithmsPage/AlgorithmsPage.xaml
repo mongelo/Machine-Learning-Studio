@@ -2,10 +2,51 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Machine_Learning_Studio.AlgorithmsPage.AlgorithmsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to AlgorithmsPage"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <CollectionView Grid.ColumnSpan="3"
+                    x:Name="algorithmsMetadataList">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border 
+                    Stroke="#005580"
+                    BackgroundColor="#e6f7ff"
+                    StrokeThickness="4" 
+                    StrokeShape="RoundRectangle 5"
+                    Padding="5,5,5,5"
+                    Margin="5,5,5,5"
+                    Grid.RowSpan="1"
+                    InputTransparent ="False"
+                    HorizontalOptions="Fill">
+
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontSize="Large"/>
+                            <Border Stroke="#0047b3"
+                                StrokeThickness="2" 
+                                InputTransparent ="False"
+                                HorizontalOptions="Center">
+                                <Button Text="Train a model" WidthRequest="140" CornerRadius="2"  >
+                                    <Button.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                            <GradientStop Color="#0066ff" Offset="0.0"/>
+                                            <GradientStop Color="#4d94ff" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </Border>
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentView>
